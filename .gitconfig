@@ -1,0 +1,22 @@
+[alias]
+	co = checkout
+	cp = cherry-pick
+	st = status -sb
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	dc = diff --cached
+	lg = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all"
+	last = log -1 --stat
+	unstage = reset HEAD --
+	df = "difftool --tool=vimdiff"
+	dfy = "difftool --tool=vimdiff -y"
+
+[core]
+	quotepath = false
+	editor = vim
+[push]
+	default = simple
+[color]
+	ui = auto
